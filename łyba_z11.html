@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rodzaje selektorów w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rodzaje selektorów w CSS</h1>
+    <ol>
+        <li><strong>Selektory proste</strong>
+            <ol>
+                <li>Selektory elementów (np. <code>p</code>, <code>h1</code>, <code>div</code>)</li>
+                <li>Selektory klas (np. <code>.nazwa-klasy</code>)</li>
+                <li>Selektory identyfikatorów (np. <code>#unikalne-id</code>)</li>
+            </ol>
+        </li>
+        <li><strong>Selektory złożone</strong>
+            <ol>
+                <li>Selektory potomków (np. <code>div p</code>)</li>
+                <li>Selektory dziecka (np. <code>div > p</code>)</li>
+                <li>Selektory sąsiednie (np. <code>h1 + p</code>)</li>
+                <li>Selektory braci (np. <code>h1 ~ p</code>)</li>
+            </ol>
+        </li>
+        <li><strong>Selektory atrybutów</strong>
+            <ol>
+                <li>Selektory ogólne (np. <code>[type]</code>)</li>
+                <li>Selektory wartości atrybutu (np. <code>[type="text"]</code>)</li>
+                <li>Selektory częściowej wartości (np. <code>[class^="btn"]</code>, <code>[class*="menu"]</code>, <code>[class$="icon"]</code>)</li>
+            </ol>
+        </li>
+    </ol>
+</body>
+</html>

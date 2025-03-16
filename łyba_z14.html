@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby określania kolorów w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sposoby definiowania kolorów w CSS</h1>
+
+    <table>
+        <tr>
+            <th>Sposób określania koloru</th>
+            <th>Przykład</th>
+            <th>Opis</th>
+        </tr>
+        <tr>
+            <td>Kolor nazwany</td>
+            <td style="background-color: red; color: white;">red</td>
+            <td>Użycie angielskiej nazwy koloru, np. <b>red</b>, <b>blue</b>, <b>green</b>.</td>
+        </tr>
+        <tr>
+            <td>RGB</td>
+            <td style="background-color: rgb(0, 255, 0);">rgb(0, 255, 0)</td>
+            <td>Określenie koloru za pomocą wartości czerwonego, zielonego i niebieskiego (0–255).</td>
+        </tr>
+        <tr>
+            <td>HEX</td>
+            <td style="background-color: #0000ff; color: white;">#0000FF</td>
+            <td>Szestnastkowy zapis koloru, np. <b>#0000FF</b> dla niebieskiego.</td>
+        </tr>
+        <tr>
+            <td>RGBA</td>
+            <td style="background-color: rgba(255, 0, 0, 0.5);">rgba(255, 0, 0, 0.5)</td>
+            <td>Jak RGB, ale z dodatkową wartością <b>przezroczystości</b> (0 – przezroczysty, 1 – pełny kolor).</td>
+        </tr>
+        <tr>
+            <td>HSL</td>
+            <td style="background-color: hsl(240, 100%, 50%); color: white;">hsl(240, 100%, 50%)</td>
+            <td>Określenie koloru w modelu <b>Odcień (Hue), Nasycenie (Saturation), Jasność (Lightness)</b>.</td>
+        </tr>
+        <tr>
+            <td>HSLA</td>
+            <td style="background-color: hsla(60, 100%, 50%, 0.5);">hsla(60, 100%, 50%, 0.5)</td>
+            <td>Jak HSL, ale z dodatkową wartością przezroczystości.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

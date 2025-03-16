@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styl w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .ramka {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: inline-block;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Gdzie jest wstawiany?</h1>
+    <p>Styl CSS może być wstawiany na trzy sposoby:</p>
+    <ul>
+        <li><strong>Styl zewnętrzny</strong> – w osobnym pliku CSS, do którego odwołujemy się w sekcji <code>&lt;head&gt;</code> za pomocą znacznika <code>&lt;link&gt;</code>.</li>
+        <li><strong>Styl wewnętrzny</strong> – wewnątrz znacznika <code>&lt;style&gt;</code> umieszczonego w sekcji <code>&lt;head&gt;</code>.</li>
+        <li><strong>Styl lokalny</strong> – bezpośrednio w atrybucie <code>style</code> w elemencie HTML.</li>
+    </ul>
+    
+    <h1>2. Składnia teoretyczna</h1>
+    <div class="ramka">
+    selektor {
+        cecha: wartość;
+        cecha2: wartość2;
+    }
+    </div>
+    
+    <h1>3. Jakie mogą być selektory?</h1>
+    <p>Selektory w CSS mogą być różne, m.in.:</p>
+    <ul>
+        <li><strong>Elementy HTML</strong> – np. <code>p</code>, <code>h1</code>, <code>div</code>.</li>
+        <li><strong>Klasy</strong> – definiowane z kropką, np. <code>.klasa</code>.</li>
+        <li><strong>Identyfikatory</strong> – definiowane z hashem, np. <code>#id</code>.</li>
+        <li><strong>Selektory zagnieżdżone</strong> – np. <code>div p</code> oznacza wszystkie akapity wewnątrz <code>div</code>.</li>
+        <li><strong>Selektory grupowe</strong> – np. <code>h1, h2, p</code> pozwalają stosować te same style do wielu elementów.</li>
+    </ul>
+    
+    <h1>4. Jakie mogą być cechy i wartości?</h1>
+    <p>W CSS cechy to właściwości stylu, np.:</p>
+    <ul>
+        <li><strong>color</strong> – kolor tekstu (np. <code>red</code>, <code>#ff0000</code>).</li>
+        <li><strong>font-size</strong> – rozmiar czcionki (np. <code>16px</code>, <code>1.2em</code>).</li>
+        <li><strong>background-color</strong> – kolor tła (np. <code>blue</code>, <code>#00ff00</code>).</li>
+        <li><strong>margin</strong> – marginesy wokół elementu (np. <code>10px</code>, <code>auto</code>).</li>
+        <li><strong>padding</strong> – odstępy wewnątrz elementu (np. <code>5px</code>, <code>1em</code>).</li>
+    </ul>
+</body>
+</html>

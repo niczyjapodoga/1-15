@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania CSS do strony WWW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fafafa;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow: auto;
+        }
+
+        strong {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sposoby podłączania CSS do strony WWW</h1>
+
+    <table class="method-table">
+        <tr>
+            <td>
+                <strong>1. Zewnętrzny plik CSS</strong><br>
+                <textarea readonly>Podłączenie zewnętrznego pliku CSS przy pomocy elementu <link> w sekcji <head> strony HTML.</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>2. Wewnętrzny CSS</strong><br>
+                <textarea readonly>Wstawienie kodu CSS bezpośrednio w tagu <style> w sekcji <head> strony HTML.</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>3. Inline CSS</strong><br>
+                <textarea readonly>Dodanie CSS bezpośrednio do elementu HTML za pomocą atrybutu "style".</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>4. Zasada @import</strong><br>
+                <textarea readonly>Użycie zasady @import do zaimportowania zewnętrznego pliku CSS do innego pliku CSS.</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>5. Frameworki CSS</strong><br>
+                <textarea readonly>Użycie gotowych frameworków CSS (np. Bootstrap) poprzez linkowanie zewnętrznych plików CSS.</textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

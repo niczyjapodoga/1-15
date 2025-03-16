@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styl Zewnętrzny w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .ramka {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: inline-block;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Składnia teoretyczna</h1>
+    <div class="ramka">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+
+    <h1>2. Gdzie wstawiany jest styl zewnętrzny, jaki znacznik jest za to odpowiedzialny oraz ile razy może on występować?</h1>
+    <p>Styl zewnętrzny jest wstawiany w sekcji <code>&lt;head&gt;</code> dokumentu HTML. Znacznikiem odpowiedzialnym za podłączenie arkusza stylów jest <code>&lt;link&gt;</code>. Może on występować wielokrotnie, aby podłączyć różne arkusze stylów.</p>
+
+    <h1>3. Najprostsza forma wstawiania stylu zewnętrznego</h1>
+    <div class="ramka">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+
+    <h1>4. Ile arkuszy stylów może być dołączonych oraz jaka zasada musi być zachowana?</h1>
+    <p>Można dołączyć wiele arkuszy stylów do jednego dokumentu HTML. Ważne jest, aby kolejność ich wczytywania była odpowiednia, gdyż style później załadowane mogą nadpisywać wcześniejsze.</p>
+
+    <h1>5. Co się dzieje w przypadku konfliktów?</h1>
+    <p>W przypadku konfliktów (czyli gdy te same style są definiowane w różnych arkuszach CSS), decyduje ostatnia załadowana definicja lub selektor o wyższej specyficzności.</p>
+
+    <h1>6. Jak są tworzone i edytowane pliki arkuszy z użyciem edytora tekstowego?</h1>
+    <p>Pliki arkuszy stylów mogą być tworzone i edytowane w dowolnym edytorze tekstowym, np. Notatniku, zapisując plik z rozszerzeniem <code>.css</code>.</p>
+
+    <h1>7. Jak są tworzone i edytowane pliki arkuszy z użyciem specjalnego edytora CSS?</h1>
+    <p>Specjalne edytory CSS, np. Visual Studio Code, Sublime Text, lub edytory online, pozwalają na wygodne pisanie i podgląd kodu CSS.</p>
+
+    <h1>8. Jakie rozszerzenie posiada plik będący zewnętrznym arkuszem stylów?</h1>
+    <p>Plik zewnętrznego arkusza stylów posiada rozszerzenie <code>.css</code>.</p>
+
+    <h1>9. Jakie są zalety zewnętrznego arkusza stylów?</h1>
+    <ul>
+        <li>Ułatwia zarządzanie stylem w wielu dokumentach HTML.</li>
+        <li>Zmniejsza rozmiar pliku HTML, czyniąc go bardziej czytelnym.</li>
+    </ul>
+
+    <h1>10. Uwagi na temat pisania w CSS</h1>
+    <p>Podczas pisania CSS należy unikać nadmiernego używania <code>!important</code>, dbać o czytelność kodu oraz wykorzystywać selektory w sposób efektywny.</p>
+</body>
+</html>

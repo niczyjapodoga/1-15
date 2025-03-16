@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budowa selektora w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .ramka {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: inline-block;
+        }
+        strong {
+            color: #d35400;
+        }
+        p {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Wymienić oraz opisz dwie części selektora</h1>
+    <p><strong>Selektor</strong> składa się z dwóch głównych części:</p>
+    <ul>
+        <li><strong>Selektor</strong> – określa, do jakich elementów HTML zostanie zastosowany styl (np. <code>p</code>, <code>.klasa</code>, <code>#id</code>).</li>
+        <li><strong>Blok deklaracji</strong> – znajduje się w nawiasach klamrowych i zawiera jedną lub więcej deklaracji stylów.</li>
+    </ul>
+    
+    <h1>2. Znaczenie nawiasów klamrowych {...}</h1>
+    <p>Nawiasy klamrowe <strong>{...}</strong> otaczają zbiór deklaracji stylu dla danego selektora. Każda deklaracja składa się z cechy oraz wartości.</p>
+    
+    <h1>3. Opisz cechy</h1>
+    <p><strong>Cechy</strong> to właściwości CSS, które określają, jakie formatowanie zostanie zastosowane do wybranego elementu. Przykłady cech:</p>
+    <ul>
+        <li><code>color</code> – określa kolor tekstu</li>
+        <li><code>font-size</code> – ustala rozmiar czcionki</li>
+        <li><code>margin</code> – definiuje odstępy wokół elementu</li>
+    </ul>
+    
+    <h1>4. Opisz wartości</h1>
+    <p><strong>Wartości</strong> określają sposób formatowania danej cechy. Przykłady wartości:</p>
+    <ul>
+        <li><code>red</code> dla <code>color</code></li>
+        <li><code>20px</code> dla <code>font-size</code></li>
+        <li><code>10px</code> dla <code>margin</code></li>
+    </ul>
+    
+    <h1>5. Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny?</h1>
+    <p>Średnik (<code>;</code>) jest stosowany do oddzielania poszczególnych deklaracji wewnątrz bloku stylów. Przykład:</p>
+    <div class="ramka">
+        <code>
+        p { color: red; font-size: 16px; }
+        </code>
+    </div>
+    <p>Nie jest konieczny po ostatniej deklaracji w bloku, ale dla lepszej czytelności kodu zaleca się jego stosowanie zawsze.</p>
+</body>
+</html>
