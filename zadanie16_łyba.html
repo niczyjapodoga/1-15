@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 16</title>
+</head>
+<body>
+    <div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 0; padding: 0;">
+        <div style="width: 80%; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="text-align: center;">Strona z pytaniami i odpowiedziami na temat znaczników HTML</h1>
+
+            <div style="font-weight: bold; margin-top: 20px; color: #2c3e50;">1. Opis znacznika DIV (jaki to element, składnia, zastosowanie, opis teoretyczny, atrybuty → tylko wymień, opisz tylko ALIGN).</div>
+            <div style="margin-bottom: 20px; padding-left: 20px;">
+                <p>Znacznik <code>&lt;div&gt;</code> jest elementem blokowym, który jest używany do grupowania innych elementów w celu ich stylizacji lub podziału na sekcje. Jest to element kontenerowy, który pozwala na łatwe zarządzanie układem strony.</p>
+                <p><b>Składnia:</b> <code>&lt;div&gt;Treść&lt;/div&gt;</code></p>
+                <p><b>Zastosowanie:</b> Używany do tworzenia sekcji na stronie, grupowania elementów, układania struktury strony. Najczęściej wykorzystywany w celu nadania kontenerom stylów CSS.</p>
+                <p><b>Atrybuty:</b> Przykładowe atrybuty: id, class, style, align (opis poniżej).</p>
+                <ul>
+                    <li><b>ALIGN:</b> Określa sposób wyrównania zawartości w obrębie kontenera. Może przyjmować wartości: left, center, right. Jednak w nowoczesnych standardach CSS lepiej używać właściwości CSS, takich jak text-align.</li>
+                </ul>
+            </div>
+
+            <div style="font-weight: bold; margin-top: 20px; color: #2c3e50;">2. Opis znacznika SPAN (jaki to element, składnia, zastosowanie, opis teoretyczny).</div>
+            <div style="margin-bottom: 20px; padding-left: 20px;">
+                <p>Znacznik <code>&lt;span&gt;</code> jest elementem liniowym, który służy do oznaczania fragmentów tekstu w obrębie innych elementów. Zwykle stosuje się go w celu stylizacji części tekstu lub nadania klas i identyfikatorów fragmentom w ramach większego bloku.</p>
+                <p><b>Składnia:</b> <code>&lt;span&gt;Treść&lt;/span&gt;</code></p>
+                <p><b>Zastosowanie:</b> Stosowany w przypadkach, gdy potrzebujemy objąć tekst w obrębie większego elementu, aby na przykład zastosować do niego styl CSS lub dodać klasę bez zmiany układu strony. W przeciwieństwie do <code>&lt;div&gt;</code>, nie zmienia układu strony, ponieważ jest elementem liniowym.</p>
+            </div>
+
+            <div style="font-weight: bold; margin-top: 20px; color: #2c3e50;">3. Różnica między znacznikami DIV i SPAN.</div>
+            <div style="margin-bottom: 20px; padding-left: 20px;">
+                <p>Oto główne różnice między znacznikami <code>&lt;div&gt;</code> i <code>&lt;span&gt;</code>:</p>
+                <ul>
+                    <li><b>DIV:</b> Jest elementem blokowym, co oznacza, że zajmuje całą szerokość dostępnego kontenera i rozpoczyna nową linię. Używany do grupowania innych elementów blokowych.</li>
+                    <li><b>SPAN:</b> Jest elementem liniowym, co oznacza, że nie przerywa przepływu tekstu i nie zajmuje całej szerokości dostępnej w kontenerze. Używany do stylizacji lub grupowania części tekstu.</li>
+                </ul>
+            </div>
+
+            <div style="font-weight: bold; margin-top: 20px; color: #2c3e50;">4. Opisz oraz wymień elementy/tagi: 1) liniowe 2) blokowe 3) blokowo-liniowe.</div>
+            <div style="margin-bottom: 20px; padding-left: 20px;">
+                <p>W HTML możemy podzielić elementy na trzy główne grupy według ich zachowania w kontekście układu strony:</p>
+                <ul>
+                    <li><b>Elementy liniowe (inline):</b> Te elementy nie przerywają przepływu dokumentu, zajmują tylko tyle miejsca, ile potrzeba do ich zawartości. Przykłady: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>.</li>
+                    <li><b>Elementy blokowe (block):</b> Elementy te zajmują całą szerokość dostępną w swoim kontenerze i rozpoczynają nową linię. Przykłady: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;ul&gt;</code>.</li>
+                    <li><b>Elementy blokowo-liniowe (block-level inline):</b> Elementy te są połączeniem cech obu typów – mogą być traktowane jako elementy blokowe, ale również działają jak elementy liniowe w niektórych przypadkach. Przykład: <code>&lt;a&gt;</code> w kontekście bloku, jak <code>&lt;button&gt;</code> lub <code>&lt;label&gt;</code>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--Adam Rohde-->

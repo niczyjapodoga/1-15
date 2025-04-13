@@ -1,0 +1,39 @@
+p#pogrubienie_łybacki {
+    font-size: 30px;
+    color: #b263d2;
+    font-weight: bold;
+}
+
+p#pochylona_łybacki {
+    font-size: 35pt;
+    color: #ffbbc1;
+    font-style: italic;
+}
+
+p#index_gorny_łybacki {
+    font-size: 1cm;
+    color: #c4691d;
+    vertical-align: super;
+}
+
+p#index_dolny_łybacki {
+    font-size: 1.5cm;
+    color: rgb(71%, 95%, 97%);
+    vertical-align: sub;
+}
+
+p#mono_łybacki {
+    font-size: 40px;
+    color: #2de865;
+    font-family: monospace;
+}
+
+p#powiekszenie_łybacki {
+    font-size: larger;
+    color: #6531a5;
+}
+
+p#pomniejszenie_łybacki {
+    font-size: smaller;
+    color: rgb(79%, 63%, 23%);
+}
