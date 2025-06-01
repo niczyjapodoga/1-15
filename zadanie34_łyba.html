@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 34 - Walidacja - Łybacki</title>
+</head>
+<body>
+  <h1>Formularz z walidacją</h1>
+  <form>
+    <label for="imie">Imię (min. 2 znaki):</label><br>
+    <input type="text" id="imie" name="imie" required minlength="2"><br><br>
+
+    <label for="email">Email (wymagany):</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="haslo">Hasło (min. 6 znaków):</label><br>
+    <input type="password" id="haslo" name="haslo" required minlength="6">
+  </form>
+</body>
+</html>

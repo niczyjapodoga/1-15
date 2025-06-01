@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadanie 36 - Formularz HTML5 - Łybacki</title>
+  <style>
+    body { background-color: #f5f5f5; font-family: sans-serif; }
+    form { width: 400px; margin: auto; padding: 20px; background: white; border: 1px solid #ccc; }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="post">
+    <h2>Formularz zgłoszeniowy</h2>
+    <label>Imię:
+      <input type="text" name="imie" required>
+    </label>
+    <label>Nazwisko:
+      <input type="text" name="nazwisko" value="Łybacki" required>
+    </label>
+    <label>Email:
+      <input type="email" name="email" required>
+    </label>
+    <label>Hasło:
+      <input type="password" name="haslo" minlength="6" required>
+    </label>
+    <label>Data urodzenia:
+      <input type="date" name="urodzenie">
+    </label>
+    <label>Ulubiony kolor:
+      <input type="color" name="kolor">
+    </label>
+    <label>Poziom zaawansowania:
+      <input type="range" min="0" max="100">
+    </label>
+    <br><br>
+    <input type="submit" value="WYŚLIJ">
+    <input type="reset" value="CZYŚĆ">
+  </form>
+</body>
+</html>
